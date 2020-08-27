@@ -18,13 +18,8 @@ namespace MethodsWithLoopsAndConditionals
 
             Console.WriteLine("How old are you?");
             var age = int.Parse(Console.ReadLine());
-            Console.WriteLine(VotingAge(age));
-
-
+            Console.WriteLine(VotingAge(age));            
         }
-
-
-
 
 
        public static void NumberRange1000()
@@ -35,7 +30,6 @@ namespace MethodsWithLoopsAndConditionals
             }
         }
 
-
         public static void UpByThree()
         {
             for (int i = 0; i <= 999; i += 3)
@@ -43,7 +37,6 @@ namespace MethodsWithLoopsAndConditionals
                 Console.WriteLine($"{i}");
             }
         }
-
 
         public static bool AreNumbersEqual(int num1, int num2)
         {
@@ -55,23 +48,19 @@ namespace MethodsWithLoopsAndConditionals
             else return false;
         }
 
-
         public static string EvenOrOdd(int num3)
         {
             return (num3 % 2 == 0) ? "You are even" : "You are odd";
         }
-
 
         public static string PosOrNeg(int num4)
         {
              return (num4 > 0) ? "Positive" : "Negative";
         }
 
-
         public static string VotingAge(int age)
         {
               return (age >= 18) ? "Cast your vote" : "Go home child";
         }
-
     }
 }
